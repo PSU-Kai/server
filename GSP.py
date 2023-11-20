@@ -13,7 +13,7 @@ def main():
     if service_needed == "yes":
         try:
             # Ask the operator about the type of service
-            service_type = input("What kind of service would you like? (Shed = S/LoadUp = L/GridEmergency = G/CriticalPeakEvent = C): ").strip().title()
+            service_type = input("What kind of service would you like? (Shed = S/LoadUp = L/GridEmergency = G/CriticalPeakEvent = C): ").strip().lower()
             if service_type not in ["S", "L", "G", "C"]:
                 print("Invalid service type. Please choose from the available options.")
                 return
